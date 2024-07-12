@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="text.css">
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="responisve.css">
+    <script type="text/javascript" src="https://checkout.epayco.co/checkout.js"></script>
+    <title> Eventos de café </title>
+</head>
+
+<body>
+<!--------------- Nav ---------------->
+    <nav>
+        <a class="opacityFull" href="index.html"><img style="width: 25vh;" src="reosurces/branding/logo-negro.svg" alt=""></a>
+        <div id="menu">
+            <div class="menu-list">
+                <a href="academia-baristas.html"><small class="bold">The Coffee Academy</small></a>
+                <a href="servicios-cafe.html"><small class="bold">Servicios</small></a>
+                <a href="tienda-cafe.html"><small class="bold">Tienda</small></a>
+                <a class="opacityFull"><small class="bold bottom-nav">Eventos</small></a>
+                <a href="contactanos.html"><small class="bold">Contactenos</small></a>
+            </div>
+
+            <a href="carrito-compras.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+        </div>
+
+        <span id="toggle-menu" class="material-symbols-outlined";>menu</span>
+    </nav>  
+<!-------------- Cursos  ----------------->
+    <div class="solo-text d-column gap-15" style="margin-bottom: 20px;">
+        <h4 class="medium">Se parte de nuestros eventos mas donde podras fortalecer tus conocimientos de cafe:</h4>
+    </div>  
+
+<!-------------- Eventos  ----------------->
+    <div id="containerEventos" class="eventos">
+        <template id="evento-cafe">
+            <div class="dip-card">
+                <img id="img-eventos" src="" alt="evento-de-cafe" style="background-color: aqua;">
+    
+                <div class="d-column gap-10">
+                    <h3 class="semi-bold">Latte art kids</h3>
+    
+                    <div class="d-inline gap-5 opacity">
+                        <span class="material-symbols-outlined">calendar_month</span>
+                        <p class="medium">Jueves 20 de Julio</p>
+                    </div>
+    
+                    <p id="des" class="medium">Ayuda a tus niños a entrar al mundo del cafe a traves de talleres practicos e inmersivos traves de talleres practicos e inmersivos</p>
+                    
+                    <h3 id="precio" class="semi-bold">$145.000</h3>
+                </div>
+    
+                <div class="d-column gap-10">
+                    <div id="blackDiplomados" class="button-black" data-id="" onclick="mensajeEvento(this)"><small class="white bold">Reserva tu cupo</small></div>
+                    <small class="medium">*Inscripciones hasta el dia 
+                        <span id="lim" class="bold">
+                            Miercoles 30 de Julio
+                        </span>
+                    </small>
+                </div>
+            </div>
+        </template>
+    </div>
+<!-------------- footer  ----------------->
+    <footer>
+        <div class="d-column gap-10">
+            <small class="bold white">JUANBARISTA</small>
+            <div><hr></div>
+            <div class="d-column gap-5">
+                <a href=""><small class="light white">¿Quiénes somos?</small></a>
+                <a href=""><small class="light white">¿Por qué estudiar con nosotros?</small></a>
+            </div>
+        </div>
+
+        <div class="d-column gap-10">
+            <small class="bold white">Contáctatenos</small>
+            <div><hr></div>
+            <div class="d-column gap-5">
+                <small class="light white">(+57) 313 256 0478</small>
+                <small class="light white">(+601) 519 7835</small>
+                <small class="light white">equipo@juanbarista.com</small>
+                <small class="light white">comercial@juanbarista.com</small>
+            </div>
+        </div>
+
+        <div class="d-column gap-10">
+            <small class="bold white">¿Dónde estamos ubicados ?</small>
+            <div><hr></div>
+            <div class="d-column gap-5">
+                <small class="light white">Kra 20 #56-43, Oficina 201</small>
+                <small class="light white">lunes a Viernes 8 AM - 8 PM </small>
+                <small class="light white">Sabados 8 AM - 3 PM </small>
+            </div>
+        </div>
+
+        <div class="d-column gap-10">
+            <small class="bold white">Nuestras redes</small>
+            <div><hr></div>
+            <div class="d-column gap-5">
+                <a href=""><small class="light white">Instagram</small></a>
+                <a href=""><small class="light white">Facebook</small></a>
+                <a href=""><small class="light white">Linkedin</small></a>
+            </div>
+        </div>
+    </footer>
+
+<!--------------- Scripts ------------->
+    <script src="scripts/eventos.js"></script>
+    <script src="scripts/interactions.js"></script>
+    <script>
+        obtenerEventos();
+    </script>
+</body>
+</html>

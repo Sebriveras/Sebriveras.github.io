@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="text.css">
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="responisve.css">
+    <title> Cursos para Baristas Internacionales | Academia de Baristas JUANBARISTA </title>
+</head>
+
+<body>
+    <!--------------- Landing ---------------->
+    <div id="landing">
+        <nav>
+            <img style="width: 25vh;" src="reosurces/branding/logo-blanco.svg" alt="">
+
+            <div id="menu">
+                <div class="menu-list">
+                    <a href="academia-baristas.html"><small class="semi-bold white">The Coffee Academy</small></a>
+                    <a href="servicios-cafe.html"><small class="semi-bold white">Servicios</small></a>
+                    <a href="tienda-cafe.html"><small class="semi-bold white">Tienda</small></a>
+                    <a href="eventos-cafe.html"><small class="semi-bold white">Eventos</small></a>
+                    <a href="contactanos.html"><small class="semi-bold white">Contactenos</small></a>
+                </div>
+    
+                <a href="carrito-compras.html"><span class="material-symbols-outlined" style="color: var(--white);">shopping_cart</span></a>
+            </div>
+
+            <span id="toggle-menu" class="material-symbols-outlined" style="filter: invert(1);">menu</span>
+        </nav> 
+
+        <!-------slide -------->
+        <div id="slide-screen">
+            <div style="grid-area: des;" class="d-columnsb">
+                <div class="d-column gap-10">
+                    <div><p id="title-landing" class="semi-bold yellow bottom-b">The Coffee Academy</p></div>
+                    <h1 id="subtitle-landing" class="extra-bold white">Academia de baristas internacional</h1>
+                    <h5 id="desc-landing" class="medium white">¡Nuestro enfoque internacional les permite a nuestros estudiantes trabajar desde cualquier parte del mundo!</h5>
+                </div>
+    
+                <div>
+                    <div class="d-column gap-20">
+                        <div class="d-inline gap-10">
+                            <div id="cirLanding" class="circle"></div>
+                            <div id="cirLanding" class="circle opacity"></div>
+                            <div id="cirLanding" class="circle opacity"></div>
+                            <div id="cirLanding" class="circle opacity"></div>
+                        </div>
+                        
+                        <a id="landing-link" href="academia-baristas.html">
+                            <button>
+                                <div class="d-inline gap-10">
+                                    <small id="buttom-landing" class="extra-bold">Conoce nuestros cursos</small>
+                                    <span id="icon-landing" class="material-symbols-outlined">school</span>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="destacados" style="grid-area: ti; display: none;" class="d-column gap-10">
+                <small class="semi-bold white">Nuestros productos del mes:</small>
+                
+                <div id="prod-destacados" class="grid2">
+                    <template id="producto-destacado-miniatura">
+                        <div class="d-columnai gap-5">
+                            <a id="img-destacados" href="" data-id="" onclick="asignar(this)"></a>
+                            <small class="medium white">Mango Biche</small>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Secccion presentacion -------->
+    <div class="present">
+        <h3 style="grid-area: h3;" class="bold">Tenemos más de 15 años de experiencia formando baristas de talla internacional.</h3>
+        <p style="grid-area: p;" class="medium">Desde 2011, nuestra academia forma baristas comprometidos con la calidad del café y su impacto en la industria, honrando a los caficultores y preparando a nuestros graduados para empleabilidad internacional.</p>
+        
+        <div style="grid-area: sec1;" class="d-column gap-10">
+            <img class="img-landing" src="reosurces/images/landing-des1.jpg">
+            <small class="medium">Brindamos certificación internacional para que puedas ejercer desde cualquier parte del mundo.</small>
+        </div>
+
+        <div style="grid-area: sec2;" class="d-column gap-10">
+            <img class="img-landing" src="reosurces/images/landing-des2.jpg">
+            <small class="medium">Nuestro campus cuenta con los instrumentos más avanzados y de mayor calidad disponibles en el mercado.</small>
+        </div>
+
+        <div style="grid-area: sec3;" class="d-column gap-10">
+            <img class="img-landing" src="reosurces/images/landing-des3.jpg">
+            <small class="medium">Contamos con tutores altamente experimentados tanto en entornos nacionales como internacionales.</small>
+        </div>
+
+        <iframe class="video" style="grid-area: img;" width="100%" height="px" src="https://www.youtube.com/embed/J04cVtURXyw?si=PR7ad2D60aW_EhqF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p style="grid-area: p2;" class="medium">Desde 2011, nuestra academia forma baristas comprometidos con la calidad del café y su impacto en la industria, honrando a los caficultores y preparando a nuestros graduados para empleabilidad internacional.</p>
+
+        <div style="grid-area: but;" class="d-columnai">
+            
+        </div>
+    </div>
+
+    <!-------------- Diplomas ------------->
+    <div class="diplomas">
+        <h3 style="grid-area: h3;" class="bold white">Ofrecemos certificaciones de talla internacional en todos nuestros cursos</h3>
+
+        <div class="d-column gap-10" style="grid-area: des1;">
+            <ul>
+                <li class="white"><h5 class="white medium">Cursos de nivel 
+                    
+                <span class="bold" style="color: var(--blue);">básico</span>,
+                    
+                <span class="bold" style="color: var(--gold);" >intermedio</span> y 
+                
+                <span class="bold" style="color: var(--red);">avanzado</span> 
+                
+                para formar baristas de talla internacional</h5></li>
+
+                <li class="white"><h5 class="white medium">Diplomados para complementar tu formación como barista y adquirir nuevas habilidades</h5></li>
+
+                <li class="white"><h5 class="white medium">Cursos de emprendimiento para que puedas impulsar tu negocio y llevarlo al siguiente nivel</h5></li>
+            </ul>
+        </div>
+
+        <img style="grid-area: img1;" src="reosurces/images/landing_Certificados.png" alt="">
+
+        <div class="div-buttom-certificate" style="grid-area: but;">
+            <button>
+                <a href="academia-baristas.html">
+                    <div class="d-inline gap-10">
+                        <small id="buttom-landing" class="extra-bold">Conoce nuestra academia de baristas</small>
+                        <span id="icon-landing" class="material-symbols-outlined">school</span>
+                    </div>
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <!-------------- Nuestros clientes------------->
+    <div class="clientes">
+        <div class="d-columnai gap-10">
+            <h3 class="bold">Grandes empresas confian en nuestros servicios corporativos</h3>
+
+            <h5 class="medium">Estos son algunos de nuestros clientes:</h5>
+        </div>
+
+        <div class="slider">
+            <div class="slider-bordes">
+                <div class="borde"></div>
+                <div class="borde inv"></div>
+            </div>
+            <div class="slide-track">
+                <div class="slide">
+                    <img style="width: 200px;" src="reosurces/logos/Davivienda.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 120px; padding-bottom: 10px;" src="reosurces/logos/Adecco.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 90px; padding-bottom: 10px;" src="reosurces/logos/RCN.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 270px;" src="reosurces/logos/Banco de Bogota.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 220px;" src="reosurces/logos/Bancolombia.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 140px;" src="reosurces/logos/BIMBO.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 200px;" src="reosurces/logos/Compensar.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 200px;" src="reosurces/logos/CORNING.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 50px;" src="reosurces/logos/ADOBE.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 100px;" src="reosurces/logos/La Fayette.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 70px;" src="reosurces/logos/AMEX.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 190px;" src="reosurces/logos/USAID.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 90px;" src="reosurces/logos/WOM.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 200px;" src="reosurces/logos/Davivienda.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 120px; padding-bottom: 10px;" src="reosurces/logos/Adecco.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 90px; padding-bottom: 10px;" src="reosurces/logos/RCN.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 270px;" src="reosurces/logos/Banco de Bogota.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 220px;" src="reosurces/logos/Bancolombia.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 140px;" src="reosurces/logos/BIMBO.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 200px;" src="reosurces/logos/Compensar.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 200px;" src="reosurces/logos/CORNING.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 50px;" src="reosurces/logos/ADOBE.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 100px;" src="reosurces/logos/La Fayette.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 70px;" src="reosurces/logos/AMEX.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 190px;" src="reosurces/logos/USAID.svg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img style="width: 90px;" src="reosurces/logos/WOM.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <a href="servicio.html">
+            <button class="button-black d-inline" onClick="asignarServ(this)" data-id="0">
+                <small class="bold white">Conoce nuestros servicios corporativos</small>
+                <span class="material-symbols-outlined" style="color: white;">dataset</span>
+            </button>
+        </a>
+    </div>
+    
+    <!-------------- Testimonios ------------->
+    <div class="testimonios">
+        <h3 style="grid-area: h3;" class="bold white">Nuestros estudiantes empiezan a cumplir sus sueños después de formarse con nosotros</h3>
+
+        <div id="testFull1" style="grid-area: tc1;" class="test-card">
+            <p id="des-testFull1" class="semi-bold">"Tras completar el curso avanzado, decidí emprender mi propio negocio y abrir mi propia cafetería"</p>
+            <div><hr></div>
+            <div class="d-column">
+                <small id="name-testFull1">Carolina Parra</small>
+                <small id="level-testFull1" class="bold">Advanced Barista</small>
+            </div>
+        </div>
+
+        <div id="testFull2" style="grid-area: tc2;" class="test-card">
+            <p id="des-testFull2" class="semi-bold">"Tras completar el curso avanzado, decidí emprender mi propio negocio y abrir mi propia cafetería"</p>
+            <div><hr></div>
+            <div class="d-column">
+                <small id="name-testFull2">Carolina Parra</small>
+                <small id="level-testFull2" class="bold">Advanced Barista</small>
+            </div>
+        </div>
+
+        <div id="testFull3" style="grid-area: tc3;" class="test-card">
+            <p id="des-testFull3" class="semi-bold">"Tras completar el curso avanzado, decidí emprender mi propio negocio y abrir mi propia cafetería"</p>
+            <div><hr></div>
+            <div class="d-column">
+                <small id="name-testFull3">Carolina Parra</small>
+                <small id="level-testFull3" class="bold">Advanced Barista</small>
+            </div>
+        </div>
+
+        <!--<div style="grid-area: sld;" class="buttom-slide">
+
+            <div class="d-inlinejc gap-15">
+                <div class="circle"></div>
+                <div class="circle opacity"></div>
+                <div class="circle opacity"></div>
+            </div>     
+        </div>
+        -->
+    </div>
+
+    <div class="testimonios800">
+        <h3 style="grid-area: h3;" class="bold white">Nuestros estudiantes empiezan a cumplir sus sueños después de formarse con nosotros</h3>
+
+        <div style="grid-area: tc1;" class="test-card">
+            <p id="des-test800" class="semi-bold">"Tras completar el curso avanzado, decidí emprender mi propio negocio y abrir mi propia cafetería"</p>
+            <div><hr></div>
+            <div class="d-column">
+                <small id="name-test800">Carolina Parra</small>
+                <small id="level-test800" class="bold">Advanced Barista</small>
+            </div>
+        </div>
+
+        <div style="grid-area: sld;" class="buttom-slide">
+
+            <div class="d-inlinejc gap-15">
+                <div id="cirTest" class="circle"></div>
+                <div id="cirTest" class="circle opacity"></div>
+                <div id="cirTest" class="circle opacity"></div>
+            </div>     
+        </div>
+    </div>
+
+    <!-------------- Formulario  ------------->
+    <div id="indxForm" class="formulario">
+        <div style="grid-area: des;" class="d-column gap-25">
+            <h3 class="bold">Aprovecha esta oportunidad de volver tus sueños realidad</h3>
+
+            <ul class="">
+                <li><p class="medium">Nuestros estudiantes trabajan en las cafeterias mas reconocidas de todo el mundo.</p></li>
+                <li><p class="medium">Ofrecemos formación de la mano de baristas con experiencia internacional.</p></li>
+                <li><p class="medium">Nuestros estudiantes trabajan en las cafeterias mas reconocidas de todo el mundo</p></li>
+            </ul>
+        </div>
+
+        <div style="grid-area: frm;" class="d-column gap-10">
+            <small style="grid-area: p;" class="bold">Déjanos tus datos y te conctactamos lo antes posible :)</small>
+
+            <form id="form-contacto" style="grid-area: frm;" method="post" class="d-column gap-10">
+                <div>
+                    <label for="nombreC">Tu nombre:</label><br>
+                    <input type="text" placeholder="Juan Barista" id="nombreC" name="nombreC" required><br>
+                </div>
+    
+                <div>
+                    <label for="contactoC">Numero de contacto:</label><br>
+                    <input type="text" placeholder="313 123 4567" id="contactoC" name="contactoC" required><br>
+                </div>
+    
+                <div>
+                    <label for="mailC">Correo electronico:</label><br>
+                    <input type="text" placeholder="tucorreo@juanbarista.com" id="mailC" name="mailC" required><br>
+                </div>
+
+                <div>
+                    <label for="msgC">Mensaje:</label><br>
+                    <textarea name="msgC" rows="10" cols="50" placeholder="Quisiera más información acerca del curso avanzado" required></textarea>
+                </div>
+    
+                <input id="butt-form" type="submit" value="Enviar">
+            </form>
+
+            <div id="confirm-form">
+                <small class="semi-bold">Tu informacion ha sido registrada</small>
+                <span class="material-symbols-outlined">check_box</span>  
+            </div>
+        </div>
+    </div>
+
+    <!-------------- footer  ----------------->
+    <footer>
+        <div class="d-column gap-10">
+            <small class="bold white">JUANBARISTA</small>
+            <div><hr></div>
+            <div class="d-column gap-5">
+                <a href=""><small class="light white">¿Quiénes somos?</small></a>
+                <a href=""><small class="light white">¿Por qué estudiar con nosotros?</small></a>
+            </div>
+        </div>
+
+        <div class="d-column gap-10">
+            <small class="bold white">Contáctatenos</small>
+            <div><hr></div>
+            <div class="d-column gap-5">
+                <small class="light white">(+57) 313 256 0478</small>
+                <small class="light white">(+601) 519 7835</small>
+                <small class="light white">equipo@juanbarista.com</small>
+                <small class="light white">comercial@juanbarista.com</small>
+            </div>
+        </div>
+
+        <div class="d-column gap-10">
+            <small class="bold white">¿Dónde estamos ubicados ?</small>
+            <div><hr></div>
+            <div class="d-column gap-5">
+                <small class="light white">Kra 20 #56-43, Oficina 201</small>
+                <small class="light white">lunes a Viernes 8 AM - 8 PM </small>
+                <small class="light white">Sabados 8 AM - 3 PM </small>
+            </div>
+        </div>
+
+        <div class="d-column gap-10">
+            <small class="bold white">Nuestras redes</small>
+            <div><hr></div>
+            <div class="d-column gap-5">
+                <a href=""><small class="light white">Instagram</small></a>
+                <a href=""><small class="light white">Facebook</small></a>
+                <a href=""><small class="light white">Linkedin</small></a>
+            </div>
+        </div>
+    </footer>
+
+<!--------------- Scripts ------------->
+    <script src="scripts/interactions.js"></script>
+    <script src="scripts/form.js"></script>
+    <script src="servicios.js"></script>
+    <script>
+        carousel();
+        responsiveMenuIndex();
+        circleT();
+        testFull();
+        destacadosLanding();
+    </script>
+</body>
+</html>

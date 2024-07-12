@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="buttom-back" onclick="moveBack(this)">
+        <span class="material-symbols-outlined">arrow_back</span>    
+    </div>
+
+    <div id="landing" onclick="moveScreens('landing','section-categories','flex')">
+        <img src="logo.svg" alt="">
+        <div class="line"></div>
+        <p>Carta gastronomica</p>
+    </div>
+
+    <div id="section-categories">
+        <p>¡Bienvenido! Esperamos que disfrutes tu pedido...</p>
+
+        <div id="container-big">
+            <template id="template-big">
+                <div class="big-category">
+                    <p>Brunch</p>
+                    <span class="material-symbols-outlined">egg_alt</span>
+                </div>
+            </template>
+        </div>
+
+        <div id="button-menu" onclick="moveScreens('section-categories', 'selection-items', 'flex')">
+            <p>Tu selección</p>
+            <span class="material-symbols-outlined">check</span>    
+        </div>
+
+    </div>
+
+    <div id="menu">
+        <div id="filter">
+            <div class="label-title">
+                <p>Principales</p>
+                <span class="material-symbols-outlined">restaurant</span>
+            </div>
+            
+            <div id="container-categories">
+            </div>
+        </div>
+    
+        <div id="container-items">
+            <template id="template-card">
+                <div class="card">
+                    <div>
+                        <div>
+                            <p id="card-item">Huevos pochados &nbsp</p>
+                            <p id="card-price">23K</p>       
+                        </div>
+                        
+                        <p id="card-description">Tomates, aceite de oliva, cebolla y gratinado de queso mozzarella.</p>
+                        
+                        <div id="card-option">
+                            <p>Vegano</p>
+                            <span class="material-symbols-outlined">psychiatry</span>
+                        </div>
+                    </div>
+        
+                    <span id="card-selection" class="material-symbols-outlined" onclick="itemInteraction(this)">add_box</span>
+                </div>
+            </template>
+        </div>
+    </div>
+
+    <div id="selection-items">
+        <div class="label-title">
+            <p>Tu Selección</p>
+            <span class="material-symbols-outlined">check</span>
+        </div>
+
+        <div id="container-categoriesSmall">
+        </div>
+        <p id="selection-void">Aún no has agregado nada <br>a tu selección</p>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="generation.js"></script>
+    <script src="interactions.js"></script>
+
+    <script>
+        getData();
+        selectCategory();
+        moveMenu();
+    </script>
+</body>
+</html>

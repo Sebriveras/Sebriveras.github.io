@@ -1,0 +1,462 @@
+:root{
+    --black: #141415;
+    --white: #f7f7f7;
+    --gray: #eeeeee;
+    --yellow: #F5C200;
+    --blue: #3E70F0;
+    --gold: #F0943E;
+    --red: #F03E3E;
+
+    --lateralPadd: 15%;
+
+    --border6px: 6px;
+
+    --shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+body{
+    margin: 0px;
+    background-color: var(--white);
+}
+
+#landing{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    
+    background-image: linear-gradient(180deg, rgba(88,88,88,0.782125350140056) 0%, rgba(0,0,0,0.9193802521008403) 100%), url('reosurces/gifs/Untitled ‑ Made with FlexClip.gif'); 
+}
+
+#img-destacados{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+#slide-screen{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "des des des des ti ti"; 
+    padding: 4% var(--lateralPadd) 8.2% var(--lateralPadd);
+    gap: 30px;
+    column-gap: 70px;
+    height: 60vh; 
+}
+
+#prod-destacados>div>a{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    width: 100%;
+    aspect-ratio: 1/1;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: var(--yellow);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    background-position: center;
+    transition: transform 0.3 ease;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--lateralPadd);
+    height: 14vh;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 68%;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+.present{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "h3 h3 na"
+    "p p na"
+    "sec1 sec2 sec3"
+    "h3-2 h3-2 na2"
+    "img img img"
+    "p2 p2 p2"
+    "but but but";
+    padding: 7% var(--lateralPadd);
+    gap: 30px;
+    column-gap: 30px;
+}
+
+.testimonios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "h3 h3 na"
+    "tc1 tc2 tc3"
+    "sld sld sld"; 
+    padding: 7% var(--lateralPadd);
+    gap: 40px;
+    column-gap: 30px;
+    background-color: var(--black);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-image: linear-gradient(180deg, rgba(88,88,88,0.782125350140056) 0%, rgba(0,0,0,0.9193802521008403) 100%), url('reosurces/images/pexels-maria-orlova-4946625.jpg'); 
+}
+
+.testimonios800{display: none;}
+
+.diplomas{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "h3 h3"
+    "des1 img1"
+    "img2 des2"
+    "but but"; 
+    padding: 5% var(--lateralPadd);
+    gap: 40px;
+    column-gap: 30px;
+    background-color: var(--black);
+}
+
+.div-buttom-certificate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-buttom-certificate > button{
+    width: 38%;
+}
+
+.diplomas > div{
+    height: 100%;
+}
+
+.diplomas > h3{
+    width: 80%;
+    margin-bottom: 3%;
+}
+
+.clientes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10% var(--lateralPadd);
+    gap: 60px;
+    column-gap: 30px;
+    background-color: var(white);
+}
+
+.clientes> div > h3{
+    width: 40vw;
+    text-align: center;
+}
+
+.slider{
+    width: 90vw;
+    height: auto;
+    margin-top: -80px;
+    overflow: hidden;
+}
+
+.slider .slide-track{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 26);
+}
+
+.slider-bordes{
+    position: relative;
+    z-index: 1;
+    top: 100px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.borde{
+    width: 60px;
+    height: 100px;
+    background: rgb(247,247,247);
+    background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 47%, rgba(247,247,247,0) 83%);
+}
+
+.inv{
+    transform: scaleX(-1);
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px * 13));
+        transform: translateX(calc(-200px * 13));
+    }
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "des des des frm frm frm"; 
+    padding: 8% var(--lateralPadd) 8.2% var(--lateralPadd);
+    gap: 30px;
+    column-gap: 30px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 4% var(--lateralPadd);
+    column-gap: 30px;
+    background-color: var(--black);
+}
+
+/*--------- The coffe Academy  ---------*/
+
+.solo-text{
+    padding: 3% var(--lateralPadd);
+    width: 50%;
+}
+
+.cursos{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 var(--lateralPadd) 6% var(--lateralPadd);
+    gap: 30px;
+    column-gap: 30px;
+}
+
+.eventos{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 var(--lateralPadd) 6% var(--lateralPadd);
+    gap: 30px;
+    column-gap: 30px;
+}
+
+#img-eventos{
+    height: 200px;
+}
+
+.paquetes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 var(--lateralPadd) 6% var(--lateralPadd);
+    gap: 30px;
+    column-gap: 30px;
+}
+
+/*--------- Productos tienda  ---------*/
+
+#productosTienda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% var(--lateralPadd);
+    gap: 40px; 
+}
+
+.contenedor {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    max-height: 100%; /* Asegura que la imagen no sea más alta que su contenedor */
+    width: auto; /* Permite que la imagen mantenga su proporción de aspecto */
+    height: auto; /* Permite que la imagen mantenga su proporción de aspecto */
+}
+
+.solo-textc{
+    padding: 5% var(--lateralPadd) 2.5% var(--lateralPadd);
+    text-align: center;
+    width: 40%;
+}
+
+#tiendaCategoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 2% 0;
+}
+
+.conteinerClass{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    column-gap: 30px;
+}
+
+.categoriaFiltros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#productoPreview{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1% 12% 0 16%;
+    gap: 30px;
+    column-gap: 30px;
+}
+
+.desPrecioTienda > h2{
+    line-height: 1;
+}
+
+#div-perfil{
+    width: 55%;
+}
+
+.bord-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#div-perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2px;
+}
+
+#buttomTiendaPro{
+    width: 53%;
+}
+
+.volver{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 0% var(--lateralPadd);
+}
+
+/*--------- Servicios  ---------*/
+
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1% var(--lateralPadd) 10% var(--lateralPadd);
+    gap: 30px;
+    column-gap: 30px; 
+}
+
+.des-servicio{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "tit tit tit tit tit tit tit na na na na na"
+    "img1 img1 img1 img1 img2 img2 img2 img2 img3 img3 img3 img3"
+    "inc inc inc inc inc inc inc inc inc inc inc inc"
+    "na2 na2 na2 na2 but but but but na3 na3 na3 na3"; 
+    padding: 2% var(--lateralPadd) 6% var(--lateralPadd);
+    gap: 25px;
+    column-gap: 30px;
+}
+
+/*--------- Contactenos  ---------*/
+
+.cont-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1% 25% 8% 25%;
+    column-gap: 30px;
+}
+
+/*--------- bolsa de compra  ---------*/
+
+#msg-carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+
+#msg-carrito>h3{text-align: center;}
+
+#bolsaCompras{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4% var(--lateralPadd) 10% var(--lateralPadd);
+    column-gap: 30px;  
+}
+
+#resumenCompra{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 6px;
+    background-color: var(--gray);
+}
+
+.confirmation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 100vh;
+}
+
+#desConf{
+    width: 60%;
+}
+
+.confirmation > div > h4{
+    text-align: center;
+}
+
+.auxItem{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 20px;
+}
+
+/*--------- varios  ---------*/
+
+nav>div>div>a{opacity: 0.7}
+nav>div>a{opacity: 0.7}
+a:hover{opacity: 1}
+.opacityFull{opacity: 1;}
+
+.d-column>div>hr{background-color: var(--white);}
+

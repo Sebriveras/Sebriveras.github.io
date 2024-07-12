@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="text.css">
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="responisve.css">
+    <title>Contactanos JUANBARISTA</title>
+</head>
+
+<body>
+<!--------------- Nav ---------------->
+    <nav>
+        <a class="opacityFull" href="index.html"><img style="width: 25vh;" src="reosurces/branding/logo-negro.svg" alt=""></a>
+        <div id="menu">
+            <div class="menu-list">
+                <a href="academia-baristas.html"><small class="bold">The Coffee Academy</small></a>
+                <a href="servicios-cafe.html"><small class="bold">Servicios</small></a>
+                <a href="tienda-cafe.html"><small class="bold">Tienda</small></a>
+                <a href="eventos-cafe.html"><small class="bold">Eventos</small></a>
+                <a class="opacityFull"><small class="bold bottom-nav">Contactenos</small></a>
+            </div>
+
+            <a href="carrito-compras.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+        </div>
+
+        <span id="toggle-menu" class="material-symbols-outlined";>menu</span>
+    </nav>     
+<!------------ contac ------------->
+    <div class="d-columnai">
+        <div class="solo-textc">
+            <h4 class="medium">Estamos felices de responder a tus consultas a traves de nuestros canales de atencion</h4>
+        </div>
+    </div>
+
+    <div class="cont-cards">
+        <a href="" onclick="enviarMsjContactanos()">
+            <div class="border-cont d-columnai">
+                <h5 class="medium">Chat</h5>
+                <span class="material-symbols-outlined">mark_unread_chat_alt</span>
+            </div>
+        </a>
+
+        <a href="index.html#indxForm">
+            <div class="border-cont d-columnai">
+                <h5 class="medium texta">Formulario <br> de contacto</h5>
+                <span class="material-symbols-outlined">assignment</span>
+            </div>
+        </a>
+
+        <a href="mailto:correo@example.com?subject=Hola" >
+            <div class="border-cont d-columnai">
+                <h5 class="medium texta">Correo <br> electronico</h5>
+                <span class="material-symbols-outlined">drafts</span>
+            </div>
+        </a>
+    </div>
+
+<!-------------- footer  ----------------->
+    <footer>
+        <div class="d-column gap-10">
+            <small class="bold white">JUANBARISTA</small>
+            <div><hr></div>
+            <div class="d-column gap-5">
+                <a href=""><small class="light white">¿Quiénes somos?</small></a>
+                <a href=""><small class="light white">¿Por qué estudiar con nosotros?</small></a>
+            </div>
+        </div>
+
+        <div class="d-column gap-10">
+            <small class="bold white">Contáctatenos</small>
+            <div><hr></div>
+            <div class="d-column gap-5">
+                <small class="light white">(+57) 313 256 0478</small>
+                <small class="light white">(+601) 519 7835</small>
+                <small class="light white">equipo@juanbarista.com</small>
+                <small class="light white">comercial@juanbarista.com</small>
+            </div>
+        </div>
+
+        <div class="d-column gap-10">
+            <small class="bold white">¿Dónde estamos ubicados ?</small>
+            <div><hr></div>
+            <div class="d-column gap-5">
+                <small class="light white">Kra 20 #56-43, Oficina 201</small>
+                <small class="light white">lunes a Viernes 8 AM - 8 PM </small>
+                <small class="light white">Sabados 8 AM - 3 PM </small>
+            </div>
+        </div>
+
+        <div class="d-column gap-10">
+            <small class="bold white">Nuestras redes</small>
+            <div><hr></div>
+            <div class="d-column gap-5">
+                <a href=""><small class="light white">Instagram</small></a>
+                <a href=""><small class="light white">Facebook</small></a>
+                <a href=""><small class="light white">Linkedin</small></a>
+            </div>
+        </div>
+    </footer>
+    
+<!--------------- Scripts ------------->
+    <script src="scripts/contactanos.js"></script>
+    <script src="scripts/interactions.js"></script>
+    <script>
+        responsiveMenuGeneral()
+    </script>
+</body>
+</html>

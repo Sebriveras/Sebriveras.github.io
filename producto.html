@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="text.css">
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="responisve.css ">
+    <title>Producto tienda JUANBARISTA</title>
+</head>
+
+<body>
+<!--------------- Nav ---------------->
+<nav>
+    <a class="opacityFull" href="index.html"><img style="width: 25vh;" src="reosurces/branding/logo-negro.svg" alt=""></a>
+    <div id="menu">
+        <div class="menu-list">
+            <a href="academia-baristas.html"><small class="bold">The Coffee Academy</small></a>
+            <a href="servicios-cafe.html"><small class="bold">Servicios</small></a>
+            <a class="opacityFull"><small class="bold bottom-nav">Tienda</small></a>
+            <a href="contactanos.html"><small class="bold">Contactenos</small></a>
+        </div>
+
+        <a href="carrito-compras.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+    </div>
+
+    <span id="toggle-menu" class="material-symbols-outlined";>menu</span>
+</nav>     
+<!------------ Producto ------------->
+
+    <a href="tienda-cafe.html" class="volver">
+        <span class="material-symbols-outlined">chevron_left</span>
+        <small class="medium">Volver al catalogo</small>
+    </a>
+
+
+    <div id="productoPreview">
+        <img id="pro-img" src="" alt="">
+        <div class="d-column gap-15">
+            <div class="desPrecioTienda">
+                <div class="d-inline">
+                    <h3 id="pro-nombre" class="medium">Mango Biche</h3>
+                    <h5 id="pro-peso" class="medium">&nbsp 500g</h5>
+                </div>
+                <h2 id="pro-precio" class="bold">16.5 K</h2>
+            </div>
+            <div id="caracteristicas" class="d-column gap-10">
+                
+                <div class="bord-container">
+                    <div class="border">
+                        <small class="bold">Variedad:</small>
+                        <p id="pro-variedad" class="medium">Caturra Honey</p>
+                    </div>
+
+                    <div class="border">
+                        <small class="bold">Tostión:</small>
+                        <p id="pro-tostion" class="medium">Tostión Media</p>
+                    </div>
+                </div>
+
+                <div class="bord-container">
+                    <div class="border">
+                        <small class="bold">Presentación:</small>
+                        <p id="pro-presentacion" class="medium">Granos</p>
+                    </div> 
+
+                    <div class="border">
+                        <small class="bold">Proceso:</small>
+                        <p id="pro-proceso" class="medium">Lyche Infusion</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div-perfil">
+                <small id="perfil-sabor" class="bold">Perfil de sabor</small>
+                <p id="pro-perfil" class="medium">- Cheerful Tropical Coffee</p>
+            </div>
+
+            <div id="tiendaButt" class="d-column gap-10" onclick="createObject()">
+                <div id="buttomTiendaPro" class="button-black"><small class="white bold">Añadir al carrito</small></div>
+                <small class="semi-bold">*Precios en pesos colombianos (COP)</small>
+
+                <div id="confirm">
+                    <small class="semi-bold">Orden agregada al carrito de compras</small>
+                    <span class="material-symbols-outlined">check_circle</span>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<!--------------- Scripts ------------->
+    <script src="scripts/tienda.js"></script>
+    <script src="scripts/interactions.js"></script>
+    <script>
+        descripcion();
+        responsiveMenuGeneral();
+    </script>
+</body>
+</html>

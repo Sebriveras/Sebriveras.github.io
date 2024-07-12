@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6, p, small{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--black);
+  margin: 0px;
+  padding: 0px;
+}
+
+h5, p, small{line-height: 1.4;}
+
+h1{font-size: 39px}
+h2{font-size: 39px}
+h3{font-size: 31px}
+h4{font-size: 25px}
+h5{font-size: 20px}
+p{font-size: 16px}
+small{font-size: 13px}
+
+.light{font-weight: 300}
+.regular{font-weight: 400}
+.medium{font-weight: 500}
+.semi-bold{font-weight: 600}
+.bold{font-weight: 700}
+.extra-bold{font-weight: 800}
+
+.white{color: var(--white)}
+.yellow{color: var(--yellow)}
+
+
+.material-symbols-outlined {
+  user-select: none;
+  color: var(--black);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 24,
+}
+
+.material-symbols-outlined :active {
+  color: inherit;
+}

@@ -1,0 +1,385 @@
+
+@media only screen and (max-width: 900px) {
+
+    :root{
+        --lateralPadd: 7%;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    nav{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1% var(--lateralPadd) 4% var(--lateralPadd);
+    }
+
+    #menu{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 11% 0 7% 0;
+        gap: 10px;
+        width: 100%;
+        background-color: var(--black);
+    }
+    
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #toggle-menu{
+        display: flex;
+    }
+
+    #slide-screen{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "des des des des des des"; 
+        padding: 4% var(--lateralPadd) 8.2% var(--lateralPadd);
+        gap: 30px;
+        column-gap: 30px;
+        height: 800px; 
+    }
+
+    .circle {
+        width: 16px;
+        height: 16px;
+    }
+
+    .present{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "h3 h3 h3"
+        "p p p"
+        "sec1 sec1 sec1"
+        "sec2 sec2 sec2"
+        "sec3 sec3 sec3"
+        "h3-2 h3-2 na2"
+        "img img img"
+        "p2 p2 p2"
+        "but but but";
+        padding: 7% var(--lateralPadd);
+        gap: 30px;
+        column-gap: 30px;
+    }
+
+    .eventos{
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 var(--lateralPadd) 6% var(--lateralPadd);
+        gap: 30px;
+        column-gap: 30px;
+    }
+
+    .video{
+        height: 220px;
+    }
+
+    .diplomas{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "h3 h3"
+        "des1 des1"
+        "img1 img1"
+        "des2 des2"
+        "img2 img2"; 
+        padding: 7% var(--lateralPadd);
+        gap: 40px;
+        column-gap: 30px;
+        background-color: var(--black);
+    }
+
+    .testimonios{display: none;} 
+
+    .testimonios800{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "h3 h3 h3"
+        "tc1 tc1 tc1"
+        "sld sld sld"; 
+        padding: 7% var(--lateralPadd);
+        gap: 40px;
+        column-gap: 30px;
+        background-color: var(--black);
+    
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        background-image: linear-gradient(180deg, rgba(88,88,88,0.782125350140056) 0%, rgba(0,0,0,0.9193802521008403) 100%), url('reosurces/images/pexels-maria-orlova-4946625.jpg'); 
+    }
+    
+    .formulario{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "des des des des des des"
+        "frm frm frm frm frm frm"; 
+        padding: 8% var(--lateralPadd) 8.2% var(--lateralPadd);
+        gap: 30px;
+        column-gap: 30px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 7% var(--lateralPadd);
+        gap: 25px;
+        column-gap: 30px;
+        background-color: var(--black);
+    }
+
+    .clientes{
+        padding: 20% var(--lateralPadd);
+    }
+
+    .clientes> div > h3{
+        width: 90vw;
+        text-align: center;
+    }
+
+    .clientes> div > h5{
+        width: 60vw;
+        text-align: center;
+    }
+
+/*--------- The coffe Academy  ---------*/
+
+    .solo-text{
+        padding: 3% var(--lateralPadd);
+        width: 80%;
+    }
+
+    .cursos{
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 var(--lateralPadd) 9% var(--lateralPadd);
+        gap: 30px;
+        column-gap: 30px;
+    }
+
+    .paquetes{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 var(--lateralPadd) 6% var(--lateralPadd);
+        gap: 10px;
+        column-gap: 30px;
+    }
+
+/*--------- Servicios  ---------*/
+
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1% var(--lateralPadd) 10% var(--lateralPadd);
+        gap: 30px;
+        column-gap: 30px; 
+    }
+    
+    .des-servicio{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "tit" 
+        "img1"
+        "img2"
+        "img3"
+        "inc"
+        "but"; 
+        padding: 2% var(--lateralPadd) 20% var(--lateralPadd);
+        gap: 15px;
+    }
+
+/*--------- Tienda  ---------*/
+
+    #productosTienda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7% var(--lateralPadd);
+        gap: 40px; 
+    }
+
+    #imagen-cafe{
+        width: 165px;
+    }
+
+    .solo-textc{
+        width: 100%;
+        padding-bottom: 8%;
+    }
+
+    #categoriaCafes{
+        display: flex;
+        flex-wrap: wrap;        
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 8px;
+    }
+
+    #categoriaProductos{
+        display: flex;
+        flex-wrap: wrap;        
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        gap: 8px;
+    }
+
+    #productoPreview{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1% 12% 0 16%;
+        gap: 30px;
+        column-gap: 30px;
+    }
+
+    .desPrecioTienda{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 4%;
+    }
+
+    .bord-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .border{
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 6px 20px;
+        border-radius: 6px;
+        width: 90%;
+        border: solid 1.5px var(--black);
+    }
+
+    #div-perfil{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 4%;
+        width: 90%;
+    }
+
+    #tiendaButt{
+        padding-top: 4%;
+        width: 100%;
+    }
+
+    #productoPreview{
+        padding-bottom: 10%;
+    }
+
+    .volver{
+        padding-bottom: 4%;
+    }
+
+/*--------- Contactenos  ---------*/
+
+
+    .cont-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1% var(--lateralPadd) 8% var(--lateralPadd);
+        gap: 15px;
+    }
+
+    .solo-textc{
+        padding: 5% var(--lateralPadd);
+        text-align: left;
+        width: 85%;
+    }
+
+/*--------- Contactenos  ---------*/
+
+    #bolsaCompras{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 4% var(--lateralPadd) 15% var(--lateralPadd);
+        gap: 30px; 
+    }
+
+    #resumenCompra{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+        border-radius: 6px;
+        background-color: var(--gray);
+    }
+
+    .item-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        border: solid 1.5px var(--black);
+        border-radius: 6px;
+        padding: 0px;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .desPrice{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .addRest{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 4px;
+        gap: 2px;
+        width: 70px;
+    }
+
+    .auxItem{
+        display: flex;
+        flex-direction:column;
+        align-items: start;
+        gap: 2px;
+    }
+
+    #buttomTiendaPro{
+        width: 85%;
+    }
+
+    #confirm{
+        width: 90%;
+    }
+
+    #confirm-form{
+        justify-content: center;
+        top: -26%;
+        left: 5%;
+        width: 80%;
+    }
+
+    nav>div>div>a{opacity: 1}
+    nav>div>a{opacity: 1}
+}
